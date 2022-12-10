@@ -1,0 +1,5 @@
+#IMPORTANDO BIBLIOTECA TKINTER
+from tkinter import * # O * siginifica importar tudo
+
+#DEPOIS DE IMPORTAR, VAMOS CRIAR UMA VARIAVEL E ATRIBUIR A BIBLIOTECA A ELA
+janela = Tk()

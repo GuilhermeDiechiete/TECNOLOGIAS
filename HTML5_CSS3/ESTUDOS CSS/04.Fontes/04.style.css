@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+p {     /*DEFINE A FONTE*/
+        font-family: Arial, Helvetica, sans-serif; 
+        
+        /*TAMANHO*/
+        font-size: 20px; 
+        
+        /*ESPESSURA*/
+        font-weight: bolder; 
+        /*a espessura pode ser lighter -> magra, normal, bold -> gorda, bolder -> bem gorda*/
+
+        /*ESTILO*/
+        font-style: italic; 
+
+        /*DECORAÇÃO*/
+        text-decoration: underline; 
+
+
+        /*ORDEM DAS CONFIGURAÇÕES*/
+        /*podemos juntas todas as configurações em apenas uma linha*/
+
+        /* estilo - espessura - tamanho - tipo */
+        font: italic bolder 1em Arial, Verdana;
+
+
+    
+    }

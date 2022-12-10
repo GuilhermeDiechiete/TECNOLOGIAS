@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*AREA :ROOT é onde criamos variaveis para usar no site e deixar mais organizado*/
+/* colocamos o nome da variavel e o valo, pode ser de cor, fonte, entre outros elementos*/
+
+:root { 
+        --cor0: white;
+        --cor1: orange;   /*variaveis de cor*/
+        --cor2: green;
+
+        --fontepadrao:'Arial';  /*variavel de fonte*/
+}

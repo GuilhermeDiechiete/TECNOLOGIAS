@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <!--USAMOS O FORM para identificar uma area de formulario-->
+    <form action="cadastro.php" method="post"> 
+                                    <!--get -> é o padrão, mostra na url os dados do formulario-->
+                                    <!--post -> esconde da url os dados do formularios-->
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome">Sobrenome:</label>  
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+<!--input text-> para texto
+    input submit-> para botão -->

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- É preciso editar as imagens em algum software para deixar as medidas certas-->
+
+    <!-- MEDIDAS PADROES-->
+    
+    <!--CELULAR: 300X300----TABLETS: 700X700----COMPUTADORES:1000x1000-->
+
+
+    <!--Precisamos colocar as imagens dentro de uma tag picture, para virar uma cadeia de fotos e adicionar os elementos source-->
+    <picture>
+        <!--adicionamos duas (source:media:type) e depois a tag img, onde vai a maior foto (1000x1000), depois precisamos configurar a media dos elementos sourse, na ordem crescente, no primeiro, colocamos a foto menor, para abrir ate no max 750px, no segundo, colocamos a imagem media, para abrir no maximo ate 1050px, depois dos 1050px, vai abrir a imagem de 1000x1000-->
+
+        <source media="(max-width:750px)" srcset="arquivos/celular.jpg" type="image/jpg">
+        <!--essa media, imagem pequena, vai ficar na tela ate 750px-->
+
+        <source media="(max-width:1050px)" srcset="arquivos/tablets.jpg" type="image/jpg">
+        <!--essa media,imagem media, vai ficar na tela ate 1050px-->
+
+        <img src="arquivos/computadores.jpg" alt="">
+        <!--essa imagem vai abrir depois dos 1050px ++ -->
+
+
+    </picture>
+    
+</body>
+</html>

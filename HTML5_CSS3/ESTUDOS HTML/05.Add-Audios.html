@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--ADD AUDIO INTERNO-->
+    <audio src="arquivos/musica1.mp3" preload="auto" controls autoplay></audio>
+    
+
+
+    <!--FORMA CORRETA DE ADD AUDIO -> precisamos adicionar mais de um TIPO de audio, caso o navegador nao reconhecer um, ele tenta outro, a ordem importa, ele começa do primeiro e vai descendo-->
+
+    <audio  preload="metadata" autoplay controls>
+
+        <source src="arquivos/musica1.mp3" type="audio/mp3">
+        <source src="arquivos/musica2.mp3" type="audio/mp3">
+        <source src="arquivos/musica3.mp3" type="audio/mp3">
+
+    </audio>
+    
+    <!--    CONTROLS -> mostra os controles 
+            AUTOPLAY -> a musica ja sai tocando 
+            PRELOAD  -> carrega depois do play-->
+</body>
+</html>

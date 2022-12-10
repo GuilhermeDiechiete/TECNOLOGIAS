@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/*Usamos um * para as configurações globais*/
+/*CONFIGURAÇÕES BLOBAIS É AQUELAS QUE QUEREMOS QUE OCORRA EM TODA A PAGINA*/
+
+* { margin: 0px;
+    border: 0px;}

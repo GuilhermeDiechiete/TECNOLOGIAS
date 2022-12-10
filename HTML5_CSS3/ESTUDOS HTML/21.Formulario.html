@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Criando Caixas de textos e de senhas</h1>
+
+    <!--FORM -> usamos para identificar um formulario-->
+            
+    <form   action="cadastro.php" 
+            method="post" 
+            autocomplete="on">
+            
+            <!--action -> ligação com o banco de dados 
+                method -> metodo,  
+                autocomplete -> mostra as opções anteriores-->
+
+        <div>
+            <label for="iusuario">Usuário:</label>
+
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="15" placeholder="primeiro nome" autocomplete="username">
+            <!-- required -> obrigatorio
+                minlength -> minimo de caracteres permitido
+                maxlength -> maximo de caracteres permitido
+                size -> largura da caixa
+                placeholder -> escreve dica dentro da caixa
+                autocomplete -> identifica o tipo para mostrar ou nao as opções anteriores-->
+        </div>
+
+        <div>
+            <label for="isenha">Senha:</label>
+
+            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15" placeholder="minimo 8" autocomplete="current-password"><!--autocomplete=current-password -> nao deixa mostrar opções de senhas-->
+        </div>
+
+        <div>
+            <input type="submit" value="enviar"><!--botão para enviar os dados da caixa-->
+            <input type="reset" value="limpar"><!--botão para limpar a caixa-->
+        </div>
+    </form>
+</body>
+</html>

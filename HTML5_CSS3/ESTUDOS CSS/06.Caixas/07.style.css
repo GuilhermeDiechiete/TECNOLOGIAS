@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* AS CAIXAS SÃO TODOS OS ELEMENTOS EM HTML, o texto, imagem, sessoes, tudo mesmo*/
+/*E as caixas tem as configurações de padding, border e margin*/
+
+
+/*PADDING -> é o espaço em volta do conteúdo*/
+
+h1 { padding: 20px; border: 2px solid black;}
+/*uma configuração vale para todos os lados*/
+
+
+h2 { padding: 40px 10px 30px 20px; border: 2px solid black;}
+/*4 configurações, uma para cada lado (superior, direita, inferior, esquerda)*/
+
+
+h3 { padding-left: 20px; border: 2px solid black;} 
+/*podemos colocar as configurações individuais (top, rigth, bottom, left)*/
+
+/* BORDER */
+h4 { border: 30px solid black;}
+/*espessura - solido ou gradient - cor */
+
+
+/*MARGIN*/
+h5 { margin: 60px; border: 2px solid black;}
+/*A margin funciona igual o padding, só que ele é o espaço depois da borda, ele afasta os parametros do site do conteudo, como o (main), o conteudo vai se afastar das laterais*/
+
+/*SOMBRA NAS CAIXAS*/
+h6 {box-shadow: 1px 1px 2px black; }
+/*deslocamento horizontal, vertical, espalhamento, cor*/
+
+/*VERTICES ARREDONDADAS*/
+P { border-radius: 10px 20px 30px 60px; border: 2px solid black;}
+/* canto superior esquerdo é a primeira confg, depois vai fazendo a volta*/

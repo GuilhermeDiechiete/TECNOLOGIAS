@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*SITE DE FONTES -> DaFont*/
+
+
+@font-face {font-family:'Mont'; src: url('arquivos/Mont-ExtraLight.otf') format('opentype');}
+/*colocamos o nome, local do arquivo e o formato*/
+
+
+p {font-family:'Mont';}

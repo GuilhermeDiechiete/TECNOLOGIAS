@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--HANDBRAKE -> software para converter video-->
+
+    <!--ADICIONAR VIDEOS INTERNOS-->
+    <video src="arquivos/video1.mp4" autoplay controls></video>
+
+
+    <!--Para evitar incompatibilidade com os navegadores, devemos usar mais de um formato de audio-->
+    <video poster="arquivos/postermusica.jpg" controls>
+
+        <source src="arquivos/video1.mp4" type="video/mp4">
+        <source src="arquivos/video2.mp4" type="video/mp4">
+        <source src="arquivos/video3.mp4" type="video/mp4">
+    </video>
+    
+
+    <!--ADICIONAR VIDEOS EXTERNOS-->
+
+    <!--Os videos são muito pesados para os sites, demoram para carregar, então a melhor opção para um site é adicionar os videos no youtube, uma plataforma que aguenta os videos tranquilo, então puxamos os videos do youtube para o site-->
+
+    <!--Para importar o video do youtube -> achamos o video, clicamos em compartilhar e vamos na opção, <INCORPORAR>, o youtube vai dar o iframe do video pronto, é so copiar e colar no html-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*ALINHAMENTO*/
+p { text-align: center;
+/* 
+right -> direita
+left -> esquerda
+center -> centro
+justify -> justificado
+*/
+
+/*ESPAÇO NO INICIO DA LINHA*/
+text-indent: 30px;
+
+/*ESPAÇO ENTRE LINHAS*/
+line-height:16px;}
+/*usar sempre o mesmo tamanho da fonte*/

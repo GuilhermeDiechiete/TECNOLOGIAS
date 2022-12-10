@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <!--RADIO -> so deixa marcar uma opção, os "name" deve ser todos iguais-->
+            <input type="radio" name="sexo" id="imas">
+            <label for="imas">Masculino</label>
+
+            <input type="radio" name="sexo" id="ifem">
+            <label for="ifem">Feminino</label>
+        </fieldset>
+
+
+        <!--Checkbox -> marca varias opções ao mesmo tempo-->
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="futebol" id="ifutebol">
+            <label for="ifutebol">Futebol</label><br>
+
+            <input type="checkbox" name="volei" id="ivolei">
+            <label for="ivolei">Volei</label><br>
+
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">Tenis</label> <br>
+        </fieldset>
+        
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
