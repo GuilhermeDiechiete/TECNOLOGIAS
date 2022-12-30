@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="app">
+        <div v-if="usuario.id == 1"> <!-- se usuario tiver o id igual a 1, vai mostrar -->
+            Id: {{ usuario.id }} <br>
+            Nome: {{ usuario.nome }}<br>
+            Sobrenome: {{ usuario.sobrenome }} <br>
+            profissão: {{ usuario.profissão }} <br>
+        </div>
+        <div v-else> Usuario Invalido</div>
+    </section>
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                usuario:{ // Object - com os elementos
+                    id: 1,
+                    nome: 'Guilherme',
+                    sobrenome: 'Diechiete',
+                    profissão: 'Frentista',
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>

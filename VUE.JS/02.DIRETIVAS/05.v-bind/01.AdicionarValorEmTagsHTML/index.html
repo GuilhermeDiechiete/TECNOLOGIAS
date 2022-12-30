@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="app">
+        <h1> {{ titulo }}</h1>
+
+        <!--v-bind: ( adicionamos textos, imagens em tags html, (podemos retirar o v-bind e deixar so os :, funciona igual))-->
+        
+        <img v-bind:src="imagemVue" v-bind:alt="altImagemVue">
+        
+
+    </section>
+
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Utilizando v-for',
+
+                imagemVue: 'https://br.vuejs.org/images/logo.png',
+                altImagemVue: 'Imagem do Vue.js',
+            }
+        })
+    </script>
+</body>
+</html>

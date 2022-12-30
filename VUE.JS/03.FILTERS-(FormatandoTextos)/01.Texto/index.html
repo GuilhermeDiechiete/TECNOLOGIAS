@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="app">
+
+        <h1> {{ titulo }} </h1>
+
+        <ul>
+            <!-- Quando nos chamamos o elemento para o HTML, é so colocar a | e chamar o filtro-->
+            <li v-for="usuario in usuarios">{{ usuario.nome | textoEmMaiusculo() }}</li>
+        </ul>
+
+        <ul>
+            <!-- Quando nos chamamos o elemento para o HTML, é so colocar a | e chamar o filtro-->
+            <li v-for="usuario in usuarios">{{ usuario.nome | cortarTexto() }}</li>
+        </ul>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+
+            data: {
+                titulo: 'Aprendendo sobre filters',
+
+                // variavel array de object
+                usuarios: [
+                    { nome: 'Guilherme Diechiete'},
+                    { nome: 'Dhaniela Souza'},
+                    { nome: 'Antonio Guilherme'},
+                ]
+            },
+
+            // na area dos filtros, criamos funções, que retorna alguma edição de texto
+            filters: {
+
+
+                textoEmMaiusculo(texto){
+                    return texto.toUpperCase() 
+                    // colocamos o return o parametro com o filtro
+                },
+                cortarTexto(texto){
+                    return texto.substring(0,10)
+                }
+            },
+
+
+            methods: {
+                enviar(){
+                    
+                }
+            },
+        })
+    </script>
+    
+</body>
+</html>

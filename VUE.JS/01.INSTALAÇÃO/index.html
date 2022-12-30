@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação Vue.JS</title>
+</head>
+<body>
+    <section id="app">
+        <h1>{{titulo}}</h1>
+    </section>
+    
+    <!-- Criamos uma tag script que vai receber a fonte do Vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+
+    
+    <script> // Abrimos outra tag script que vai iniciar o Vue.js na nossa aplicação
+
+    
+        var app = new Vue({ // criamos uma variavel que recebe o vue.js
+
+            el: '#app', // criamos um elemento que recebe a tag pai( usamos a maior tag do nosso sitema, o vue.js so vai funcionar dentro dela)
+            data: {
+                titulo: 'Instalação do Vue.js'
+            }
+        })
+    </script>
+</body>
+</html>

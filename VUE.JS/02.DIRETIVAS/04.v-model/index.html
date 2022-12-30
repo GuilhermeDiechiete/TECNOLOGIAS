@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="app">
+        <h1> {{ titulo }}</h1>
+
+        <!-- v-model ( atualiza em tempo real na tela para o usuario)-->
+        <label for="">Nome:</label>
+        <input type="text" v-model="nome"> <br>
+
+        <br><br>
+
+        <label for="">Telefone:</label>
+        <input type="text" v-model="telefone"> <br>
+
+        <br><br>
+
+        <label for="">Deseja receber Novidades</label>
+        <input type="radio" value="Sim" v-model="novidades">Sim
+        <input type="radio" value="Não" v-model="novidades">Não <br>
+
+        <br><br>
+
+        <label for="">Interesses</label> <br>
+        <input type="checkbox" value="Futebol" v-model="interesses"> Futebol <br>
+        <input type="checkbox" value="Volei" v-model="interesses"> Volei <br>
+        <input type="checkbox" value="Basquete" v-model="interesses"> Basquete <br>
+
+        <br><br>
+
+        <label for="">Como nos Conheceu?</label> <br>
+        <select v-model="conheceu">
+            <option value="">Escolha</option>
+            <option value="TV">TV</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Google">Google</option>
+            <option value="Revista">Revista</option>
+        </select>
+        <div class="retorno">
+            Nome: {{ nome }} <br>
+            Telefone: {{ telefone }} <br>
+            Novidades: {{ novidades }} <br>
+            Interesses: {{ interesses }} <br>
+            Como nos conheceu: {{ conheceu }}
+        </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Utilizando v-model',
+
+                nome: '',
+                telefone: '',
+                novidades: '',
+                interesses: [],
+                conheceu: '',
+
+                
+            }
+        })
+    </script>
+</body>
+</html>

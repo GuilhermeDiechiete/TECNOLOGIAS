@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="app">
+
+        <h1> {{ titulo }} </h1>
+
+        {{ nome }}
+        {{ textoMaiusculo}}
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+
+            data: {
+                titulo: 'Aprendendo sobre filters',
+                nome: 'Guilherme Diechiete'
+            },
+
+            filters: {},
+
+            methods: {},
+
+            computed: {
+                // são funcoes que adicionamos alterações quando altera o valor das variaveis
+                textoMaiusculo(){
+                    return this.nome.toUpperCase()
+                }
+            },
+            watch: {
+                // Observar quando uma variavel se altera, quando alterar o valor da variavel, a função vai rodar
+
+                nome(novo, antigo){
+                    console.log(novo)
+                    console.log(antigo)
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>
