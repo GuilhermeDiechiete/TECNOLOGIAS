@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="app">
+        <!-- colocando na tela o componente pai-->
+        <full-area></full-area>
+
+        
+    </section>
+    
+
+
+    <!-- colocamos a estrutura dos componentes fora da seção do Vue.js-->
+    <template id="botoesMenu">
+        <ul>
+            <button>Home</button>
+            <button>Instagram</button>
+            <button>Facebook</button>
+            <button>Contato</button> 
+        </ul>
+    </template>
+
+    <template id="fullArea">
+        <nav>
+            <h1>Guilherme Diechiete</h1>
+            <!--componente filho dentro do componente pai-->
+            <botoes-menu></botoes-menu>
+        </nav>
+            
+        
+        
+    </template>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+
+        //componentes e linhas de codigos para ser reutilizado
+                        //nome
+        Vue.component('full-area', { // componente pai
+            template: '#fullArea'
+        });
+        Vue.component('botoes-menu', { // componente filho
+            template: '#botoesMenu'
+        });
+
+        var app = new Vue({
+            el: '#app',
+
+            
+
+            data: {
+                titulo: 'Criando Componentes',
+            
+            },
+
+        })
+    </script>
+    
+</body>
+</html>
