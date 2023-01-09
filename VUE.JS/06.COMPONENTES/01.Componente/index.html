@@ -12,35 +12,37 @@
         <h1> {{ titulo }} </h1>
 
         <!--nao é a forma mais correta de escrever o HTML-->
-        <menu-bar></menu-bar>
+        <produtos></produtos>
 
-        <template id="menu">
+        
+    </section>
+
+        <!-- CODIGO FONTE ( colocamos fora da area Vue)-->
+        <template id="liProdutos">
             <ul>
-                <li>Item1</li>
-                <li>Item2</li>
-                <li>Item3</li>
+                <li>Arroz</li>
+                <li>Feijao</li>
+                <li>Açucar</li>
             </ul>
         </template>
-            
-       
-    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
     <script>
 
-        //componentes e linhas de codigos para ser reutilizado
-                        //nome
-        Vue.component('menu-bar', {
-            template: '#menu'
+        //componentes ( colocamos em primeiro no script)
+
+                    //nome da tag
+        Vue.component('produtos', {
+            template: '#liProdutos' // id da tag do codigo
         })
+
         var app = new Vue({
             el: '#app',
 
             
-
             data: {
-                titulo: 'Aprendendo sobre filters',
+                titulo: 'Aprendendo sobre Componentes',
             
             },
 
